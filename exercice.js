@@ -7,6 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
                            "o", "n", "q", "p", "s", "r", "t", "u", "v", "w", "x", "y", "z"];
     const numbers = Array.from({ length: 100 }, (_, i) => i + 1);
 
+    const lireNombres = ["2","5","8","11","14","17","20","3","6","9","12","15","18","1","4","7","10","13","16","19"]
+
     const studentName = new URLSearchParams(window.location.search).get("name");
 
     // Fonction pour créer les exercices
@@ -74,4 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Exercice 4 : Nombres de 1 à 100 (20 colonnes x 5 lignes)
     createExercise("exercice4", numbers, "exercice4", 5, 20, "'Script Ecole 2', Arial, sans-serif");
+
+    // Exercice  : lire les nombres (1 ligne)
+    createExercise("exercice5", lireNombres, "exercice5", 1, 20, "'Script Ecole 2', Arial, sans-serif");
 });
